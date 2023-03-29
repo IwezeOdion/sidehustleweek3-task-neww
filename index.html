@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ODshops</title>
+    <!-- google fonts cdn link  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- Heading Section Begings -->
+    <header>
+        <a href="" class="logo"><i class="fa fa-shopping-cart"></i>ODshops</a>
+        <div id="menu" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a class="" href="#homes">home</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#contact">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Heading Section Ends -->
+
+    <!-- Home Section Starts  -->
+
+    <section class="home" id="home">
+        <div class="content">
+            <h1>best quality products for you</h1>
+            <p>
+                Lorem, ipsum dicing elit. Blanditiis
+                deserunt ds iusto illo fuga odio assumenda
+                enim, a maequi eveniet animi sed! Dolorum,
+                soluta.
+            </p>
+            <a href="#"><button class="btn">order now</button></a>
+        </div>
+    </section>
+
+    <!-- Home Section Ends -->
+
+    <!-- About Section Begins -->
+
+    <section class="about" id="about">
+        <div class="image">
+            <img class="img2" src="img/3.png" alt="" />
+        </div>
+
+        <div class="content">
+            <h1 class="heading">about product</h1>
+            <h3>change your life with our high quality products</h3>
+            <p>
+                Our products are made with high-quality materials and cutting-edge
+                technology to provide an exceptional experience.
+            </p>
+            <ul>
+                <li><i class="fas fa-check-double"></i>quality wristwatches</li>
+                <li><i class="fas fa-check-double"></i> quality wears</li>
+                <li><i class="fas fa-check-double"></i> voice call facility</li>
+                <li><i class="fas fa-check-double"></i> nice and soft design</li>
+            </ul>
+        </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Registration Section Starts-->
+    <section class="contact" id="contact">
+        <h1 class="heading">Registeration</h1>
+
+        <h1 class="title">Register to view latest products</h1>
+
+        <form action="#" id="msform" onsubmit="return validateForm(this)">
+            <div class="inputBox">
+                <input type="text" placeholder="first name" />
+                <input type="text" placeholder="last name" />
+            </div>
+
+            <div class="inputBox">
+                <input type="email" placeholder="your email" />
+                <input type="password" placeholder="your password" />
+            </div>
+
+            <div class="gender">
+                <span class="gender-title">Gender</span>
+                <div class="gender-category">
+                    <input type="radio" name="gender" id="male" required />
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female" required />
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="other" required />
+                    <label for="other">Other</label>
+                </div>
+            </div>
+
+
+            <button class="btn" type="submit" id="login" onclick="return loginUser" value="Login" onclick="yes"
+                class="submit">Register</button>
+        </form>
+        <!-- Registration Section Ends-->
+
+
+        <!-- Contact Section Starts-->
+
+        <section class="contact2">
+            <div class="content2">
+                <h2>Contact Us</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex eum vitae
+                    saepe <br />
+                    qisquam consectetur, quam deserunt, velit officiis corrupti hic
+                    nesciunt <br />
+                    quidem assumenda voluptates nobis dolores aperiam, magni optio minus.
+                </p>
+            </div>
+            <div class="container2">
+                <div class="contactInfo2">
+                    <div class="box2">
+                        <div class="icon"><i class="fa fa-address-book" aria-hidden="true"></i></div>
+                        <div class="text2">
+                            <h3>Address</h3>
+                            <p>6, Idahosa Road,<br />Ayobo, Lagos,<br />10001</p>
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <div class="icon"><i class="fa fa-phone-square" aria-hidden="true"></i></div>
+                        <div class="text2">
+                            <h3>Phone</h3>
+                            <p>+2349133566866</p>
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                        <div class="text2">
+                            <h3>Email</h3>
+                            <p>iwezeodion@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contactForm2">
+                    <form action="">
+                        <h2>Send message</h2>
+                        <div class="inputbox2">
+                            <input type="text" name="" required="required" />
+                            <span>Full Name</span>
+                        </div>
+                        <div class="inputbox2">
+                            <input type="text" name="" required="required" />
+                            <span>Email</span>
+                        </div>
+                        <div class="inputbox2">
+                            <textarea required="required"></textarea>
+                            <span>Type your Message...</span>
+                        </div>
+                        <div class="inputbox2">
+                            <input class="btn" type="submit" name="" value="Send" />
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section Ends-->
+
+</body>
+<script type="text/javascript">
+    const signUp = document.querySelector('msform');
+    signUp.addEventListener('click', () => {
+        console.log('Hey');
+    });
+    function validateForm(form) {
+        alert('Successful submittion');
+    }
+    msform.addEventListener('msform', function (e) {
+        e.preventDefault();
+    });
+    </script>
+    
+<script>
+    const menu = document.querySelector("#menu");
+    const navbar = document.querySelector(".navbar");
+
+    menu.addEventListener("click", function () {
+        menu.classList.toggle("fa-times");
+        navbar.classList.toggle("nav-toggle");
+        console.log("clicked")
+    });
+</script>
+
+</script>
+
+</html>
